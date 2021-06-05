@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Present Times</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+ {{>navbar}}
+ <div class="quotes">
+      {{#if data}}
+      <h2 id="text">{{data.text}}</h2>
+      <h3 id="author">{{data.author}}</h3>
+        {{/if}}
+
+
+ </div>
+  
+  <div class="wrapper">
+    <div class="news">
+      {{#if articles}}
+        {{#each articles}}
+        <hr style="color: rgb(224, 21, 21);">
+        <a href="{{this.url}}" class="card">
+          <div class="card_left">
+            <img class="img" src="{{this.urlToImage}}" alt="{{this.title}}">
+          </div>
+          <div class="card_right">
+            <h2>{{this.title}}</h2>
+            <p>{{this.description}}</p>
+          </div>
+        </a>
+        {{/each}}
+        {{else}}
+        <h1>No posts found.</h1>
+        {{/if}}
+    </div>
+  </div>
+  {{>footer}}
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Present Times</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+     <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <title>Register Here</title>
+</head>
+
+<body>
+    {{>navbar}}
+    <section>
+        <div class="container">
+            <div class="contactForm">
+                <div class="main">
+                <h2>Login Here</h2>
+                <form action="/login" id="register" method="post">
+                    <div class="formBox">
+
+                        <div class="inputBox w50">
+                            <input type="email" required name="email">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="password" required name="password">
+                            <span>Password</span>
+                        </div>
+                        <div class="inputBox w100">
+                        <input type="submit" value="Login" name="register" id="submit">
+                        </div>
+                        <h4 style="color: #095a55;">New Here? 
+                          <span><a href="/register" style="color: rgb(219, 98,57) ; text-decoration:none;">Ceate an account</a></span>
+                          </h4>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{>footer}}
+</body>
+</html>

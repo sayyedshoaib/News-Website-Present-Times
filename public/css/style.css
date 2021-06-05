@@ -1,0 +1,138 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left:0px;
+    height: 3rem;
+    width:100%;
+    position: sticky;
+    background-color: #095a55;
+}
+
+/* #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+} */
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+#logo:hover{
+    font-size: 23px;
+    color: #fff38e;
+}
+
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    margin-left: 45%;
+    /* margin-right: 1.2em; */
+    display: flex;
+   
+}
+
+#navbar ul li{ 
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: #fff;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: #fff38e;
+}
+
+
+body {
+    margin: 0;
+    background-color: #fff38e;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* background-color: #f5abdc; */
+   
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    background: #fff;
+}
+.card_left{
+    margin: 1em;
+    margin-left: 3.5%;
+}
+.img{
+    width: 10rem;
+    height: 10rem;
+}
+.info{
+    margin-top: 10px;
+    margin-left: 3.5%;
+    margin-bottom: 10px;
+    font-family: 'Bree Serif', serif;
+}
+.card_right{
+    margin-left: 1rem;
+    width: 81%;
+    margin-top: 13px;
+    font-family: 'Bree Serif', serif;
+}
+.card_right h2{
+    color: black;
+    font-weight: bold;
+
+}
+.card_right p{
+    color: black;
+    padding-top: 1rem;
+    line-height: 1.6rem;
+}
+
+footer{
+    background: #095a55;
+    color: white;
+    padding: 9px 20px;
+    height: 10rem;
+}
+.center{
+    text-align: center;
+    
+}

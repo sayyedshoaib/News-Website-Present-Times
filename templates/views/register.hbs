@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+     <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+  <title>Present Times</title>
+    
+</head>
+<body>
+    {{>navbar}}
+    <section>
+        <div class="container">
+            <div class="contactForm">
+                <div class="main">
+                <h2>Register Here</h2>
+                <form action="/register" id="register" method="post">
+                    <div class="formBox">
+                        <div class="inputBox w50">
+                            <input type="text" required name="firstname">
+                            <span>First Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="text" required name="lastname">
+                            <span>Last Name</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="email" required name="email">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="number" required name="age">
+                            <span>Age</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="radio" name="gender" id="male">
+                            <span id="male">Male</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="radio" name="gender" id="female">
+                            <span id="female">Female</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="password" required name="password">
+                            <span>Password</span>
+                        </div>
+                        <div class="inputBox w50">
+                            <input type="password" required name="cpassword">
+                            <span>Confirm Password</span>
+                        </div>
+                        <div class="inputBox w100">
+                        <input type="submit" value="Register" name="Register" id="submit">
+                        </div>
+                        <h4 style="color: #095a55;">Already registered? <span><a href="/login"
+                                    style="color: rgb(219, 98,57) ; text-decoration:none;">Login Here</a></span></h4>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{>footer}}
+</body>
+</html>

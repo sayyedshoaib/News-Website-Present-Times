@@ -1,0 +1,33 @@
+#navbar {
+    flex-direction: column;
+    height: 11rem;
+}
+#navbar ul{
+    margin-left: 10px;
+    display: block;
+     margin-right: 1.2em;
+    display: flex;
+    flex-direction: column; 
+    font-family: 'Baloo Bhai', cursive;
+   
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+footer{
+    height: 15rem;
+}
